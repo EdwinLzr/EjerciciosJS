@@ -24,3 +24,12 @@ typeof(numero2)
 numero2 != numero1;
 // extricto
 numero2 !== numero1;
+
+// null and undefined
+
+let numero4;
+numero4=null;
+
+// undefined = es algo que no esta definido
+// null es algo vacio 
+
