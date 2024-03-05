@@ -85,3 +85,5 @@ for(let i=0; i<carrito.length; i++){
     return`${producto.nombre} -- ${producto.precio}`;
     // console.log(`${producto.nombre} -- ${producto.precio}`);
    })
+
+   
