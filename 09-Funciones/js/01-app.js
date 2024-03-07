@@ -55,3 +55,23 @@ function saludar(nombre='', apellido=''){
 saludar('Edwin','Loaiza')
 
 // return en las funciones
+
+iniciarApp();
+
+
+function iniciarApp(){
+
+  console.log('iniciando App....')
+  segundaFuncion();
+}
+
+function segundaFuncion(){
+  console.log('desde la segunda funcion')
+
+  usuarioAuth('pablo');
+
+
+}
+function usuarioAuth(usuario){
+  console.log('Autenticando usuario');
+  console.log(`Usuario autenticado ${usuario}`);}
