@@ -54,7 +54,7 @@ function saludar(nombre='', apellido=''){
 }
 saludar('Edwin','Loaiza')
 
-// return en las funciones
+// como se comunican las funciones
 
 iniciarApp();
 
@@ -75,3 +75,71 @@ function segundaFuncion(){
 function usuarioAuth(usuario){
   console.log('Autenticando usuario');
   console.log(`Usuario autenticado ${usuario}`);}
+
+
+  // return en funciones
+function sumar3(a,b){
+  return a + b;
+}
+
+const resultado = sumar(2 , 3);
+
+console.log(resultado)
+
+
+// eejemplo mas avanzado
+
+let total=0;
+function agregarCarrito(precio){
+return total += precio;
+}
+
+function calcularImpuesto(total){
+return total * 1.15;
+}
+total=agregarCarrito(300)
+total=agregarCarrito(200)
+total=agregarCarrito(100)
+
+const totalPagar = calcularImpuesto(total);
+console.log(`total es: ${totalPagar}`)
+console.log(total)
+
+
+// metodos de propiedad son funciones paracidos a un metodo  es un objeto con multiples funciones
+
+const reproductor={
+  reproducir:function(id){
+    console.log(` Reproduciendo cancion id${id}`)
+  },
+  pausar:function(id){
+    console.log(` Pausando cancion id${id}`)
+  },
+  borrar: function(id){
+     console.log(`borrando cancion... ${id}`)
+  },
+  crearPlayList:function(nombre){
+    console.log(` creando playList: ${nombre}`)
+  },
+  reproducirPlayList:function(nombre){
+    console.log(` reproduciendo playList: ${nombre}`)
+  }
+}
+reproductor.reproducir(30)
+reproductor.pausar(30)
+reproductor.borrar(30);
+reproductor.crearPlayList('music Metal');
+reproductor.reproducirPlayList('music metal')
+
+
+// arrow function o funciones de flecha
+
+const aprendiendo = ()=>{
+
+}
+
+// las funciones de flecha se pueden optimizar cuando las funciones son de una sola linea
+// se por implicito el return y se elimina las llaves
+const aprendiendo2=()=>'aprendiendo Javascript';
+
+aprendiendo()
