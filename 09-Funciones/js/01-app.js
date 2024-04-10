@@ -139,7 +139,40 @@ const aprendiendo = ()=>{
 }
 
 // las funciones de flecha se pueden optimizar cuando las funciones son de una sola linea
-// se por implicito el return y se elimina las llaves
+// se da por implicito el return y se elimina las llaves
 const aprendiendo2=()=>'aprendiendo Javascript';
 
 aprendiendo()
+
+// funciones de flecha con parametros si pasas mas de 2 parametros es obligatorio el parentesis
+const aprendiendo23 = function(tecnolgia){
+  console.log(`aprendiedo ${tecnolgia}`)
+}
+
+
+// console.log(aprendiendo23())
+// con arrow functions
+const reproductor2={
+  cancion:'',
+  reproducir:id =>(` Reproduciendo cancion id${id}`),
+  pausar:id=>(` Pausando cancion id${id}`),
+  borrar: id=>(`borrando cancion... ${id}`),
+  crearPlayList:nombre=>(` creando playList: ${nombre}`),
+  reproducirPlayList:nombre=>(` reproduciendo playList: ${nombre}`),
+
+  set nuevaCancion(cancion){
+   this.cancion=cancion;
+   console.log(`añadiendo ${cancion}`)
+  },
+  get obtenerCancion (){
+    console.log(`${this.cancion}`)
+  }
+}
+
+reproductor2.nuevaCancion='vestido de cristal';
+reproductor2.obtenerCancion;
+reproductor.reproducir(30)
+reproductor.pausar(30)
+reproductor.borrar(30);
+reproductor.crearPlayList('music Metal');
+reproductor.reproducirPlayList('music metal')
