@@ -37,3 +37,26 @@ switch(metodoPago){
 }
 
 
+const usuario =true;
+const puedePagar=true;
+const edad = 18;
+
+if(usuario && puedePagar){
+    console.log('puede pagar')
+}else if(puedePagar && usuario){
+    console.log('puede pagar')
+}else if(usuario || edad>=18){
+console.log('no cumple los requisitos')
+}
+// operador ternario
+const auth = false;
+const puede=true;
+
+console.log(auth ? 'si esta auth' : 'no est auth')
+console.log(auth && puede ? 'si puede' : 'no est auth')
+console.log(auth || puede ? 'si puede' : 'no est auth')
+
+
+// if anidado ternario 
+console.log(auth && puede ? 'no puede' ?'si puede' : 'es asi': 'no est auth')
+
