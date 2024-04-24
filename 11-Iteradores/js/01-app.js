@@ -100,3 +100,30 @@ console.log(`${indice}: ${pendiente}`)
 pendientes.map((pendiente,indice)=>{
 console.log(`${indice}: ${pendiente}`)
 })
+
+
+
+// for of
+
+for(let  pendiente of pendientes){
+   console.log(pendientes);
+}
+
+for(let carrito of producto){
+    console.log(carrito.nombre)
+}
+
+const autos ={
+  marca:'BMW',
+  color:'red',
+  modelo:'2029'
+}
+// actua sobre objeto
+for(let propiedad in autos){
+   console.log(`${autos[propiedad]}`)
+
+}
+// otra forma
+for(let [llave, valor]of Object.entries(autos)){
+    console.log(valor)
+}
