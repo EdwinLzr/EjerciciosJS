@@ -164,6 +164,6 @@ const cardDiv=document.querySelector('.card')
 // })
 
 
-//DETENER CON UN METODO EL EVENT BUBBLING
+
 
     
