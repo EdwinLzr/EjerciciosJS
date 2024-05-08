@@ -28,6 +28,15 @@ contenedor.appendChild(card)
 
 
 
+const libro=document.createElement('p')
+libro.textContent='esta es la historia de la casa de las sepienetes que se estan acomodando para salir  a casar peor no se sabe que animal van a casar con los perros que estan furiosos y estan ladrando porque salio una vaca en pantalones'
 
-console.log(card)
+const titulo_libro= document.createElement('h1')
+titulo_libro.textContent='LIBRO DE CACERIA FORTIVA'
+
+libro.appendChild(titulo_libro)
+
+console.log(libro)
+
+
 
